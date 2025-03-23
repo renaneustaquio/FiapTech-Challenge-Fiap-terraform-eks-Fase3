@@ -130,3 +130,13 @@ variable "service_type" {
   type    = string
   default = "LoadBalancer"
 }
+
+variable "subnet_ids" {
+  description = "IDs das subnets"
+  type        = list(string)
+}
+
+variable "security_group_id" {
+  description = "ID do security group"
+  type        = any
+}
