@@ -38,6 +38,12 @@ data "aws_subnet" "publica_2" {
   }
 }
 
+locals {
+  subnet_privadas_ids = [
+    data.aws_subnet.privada_1.id,
+    data.aws_subnet.privada_2.id
+  ]
+}
 
 locals {
   subnet_todas_ids = [

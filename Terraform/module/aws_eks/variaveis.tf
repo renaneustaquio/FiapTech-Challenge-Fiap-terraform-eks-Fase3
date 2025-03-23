@@ -21,7 +21,7 @@ variable "eks_addon_coredns_version" {
 variable "eks_addon_ebs_csi_driver_version" {
   description = "Versão do addon EBS CSI Driver para o EKS"
   type        = string
-  default     = "v1.40.0-eksbuild.1"
+  default     = "v1.41.0-eksbuild.1"
 }
 
 ###### Variáveis para o Cluster EKS ######
