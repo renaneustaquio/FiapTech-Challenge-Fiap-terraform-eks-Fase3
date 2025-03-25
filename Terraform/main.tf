@@ -11,7 +11,7 @@ module "kubernetes" {
 
   mcking_cluster                  = module.aws_eks.mcking_cluster
   subnet_ids                      = local.subnet_privadas_ids
-  security_group_id 			  = data.aws_security_group.mcking_security_group.id
+  security_group_id               = data.aws_security_group.mcking_security_group.id
   mercado_pago_client_id          = var.mercado_pago_client_id
   mercado_pago_client_secret      = var.mercado_pago_client_secret
   mercado_pago_client_credentials = var.mercado_pago_client_credentials
